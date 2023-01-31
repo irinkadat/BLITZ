@@ -1,0 +1,316 @@
+body {
+  background-color: #cfcfdd;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #f3f3f5;
+}
+
+.header a {
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding-right: 60px;
+  padding-left: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 14px 18px;
+}
+
+.nav-bar {
+  border: 1px;
+  padding: 0.2rem 0.2rem;
+  margin-left: auto;
+  width: 100%;
+}
+
+li.services {
+  display: none;
+}
+li.projects {
+  display: none;
+}
+li.about {
+  display: none;
+}
+
+li a:hover {
+  background-color: #1111;
+}
+
+ul.primary-nav {
+  list-style-type: none;
+  padding: 1rem 1rem;
+  display: flex;
+  border: 1px;
+  vertical-align: middle;
+}
+
+.burger-img {
+  display: inline;
+  cursor: pointer;
+}
+.burger {
+  position: absolute;
+  right: 20px;
+}
+.contact-us {
+  display: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.right-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*magari ragacaa*/
+}
+
+.main {
+  background-color: #0b0b0c;
+  border: 0.5px solid #101011;
+  box-sizing: border-box;
+}
+
+/*es aris gverdisgverd ori divis ganlageba*/
+.first-section {
+  display: flex;
+  height: 430px;
+}
+
+.item {
+  flex-basis: 50%;
+  height: 100%;
+  width: 50%;
+}
+.item_1 {
+  flex-basis: 50%;
+  height: 100%;
+  width: 50%;
+  font-size: 0.6em;
+  text-align: center;
+  padding: 70px 0;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.look {
+  text-align: center;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* .item {
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+} */
+
+.first-section {
+  background-color: #f3f3f5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 0.5px solid #101011;
+}
+
+/*imistvis rom sami div ertmanetis gverdit igive zomis ikos mshobels vuwert diplay:flex*/
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.div {
+  box-sizing: border-box; /*es aucilebelia imistvis ro yuti ar gaiwelos da bodys garet ar gavidses*/
+  border: 0.5px solid #101011;
+  border-radius: 10px;
+  background-color: #f3f3f5;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  /* width: 32%; */
+  margin: 0px;
+  padding: 18px;
+  margin-top: 0px;
+  height: 270px;
+}
+
+p {
+  margin-top: 8px;
+  word-break: break-all;
+  text-align: center;
+
+  /* font-size: 1.2em; */
+}
+.meet {
+  margin: 8px;
+}
+
+.text_2 {
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.netflix_logo {
+  display: inline-block;
+  margin-top: 15%;
+}
+
+.text_3 {
+  font-size: 3em;
+  margin-top: 6px;
+  font-weight: bold;
+}
+.work-with-us {
+  display: inline-block;
+  color: #59596a;
+  margin-bottom: 8px;
+}
+
+.people {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-height: 100%;
+  /* display: inline-flex; */
+  position: relative;
+  flex-wrap: wrap;
+  /*object-fit: cover;
+  overflow: hidden;
+  position: relative; */
+}
+.portrait-img {
+  width: 32px;
+  height: 32px;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1px;
+  margin-right: 2px;
+  border-radius: 50%;
+}
+
+.asterisk {
+  display: inline-block;
+  margin: 15%;
+}
+
+.mail-btn {
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.touch-btn {
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #dd5e89 0%,
+    #f7bb97 51%,
+    #dd5e89 100%
+  );
+  font-weight: bold;
+  border-radius: 18px;
+  height: 36px;
+  width: 84px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  transition: 0.5s;
+  background-size: 200% auto; /*es aris ro feri sheicvalos kursorus mitanisas*/
+  text-transform: uppercase;
+}
+.touch-btn:hover {
+  opacity: 0.5;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.mail-btn {
+  border: none;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  .item_1 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0;
+    line-height: 1;
+  }
+  .touch-btn {
+    width: 120px;
+    font-size: 0.6em;
+    display: inline-block;
+  }
+  .section {
+    flex-direction: row;
+  }
+  .div {
+    width: 32%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  li.services {
+    display: inline-block;
+  }
+  li.projects {
+    display: inline-block;
+  }
+  li.about {
+    display: inline-block;
+  }
+}
+li {
+  /* float: left; es im shemtxvevashi unda roca inline-blocks ikeneb */
+  flex: 1;
+}
+
+@media screen and (min-width: 700px) {
+  .contact-us {
+    border: none;
+    height: 30px;
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    margin-top: 0px;
+
+    background-color: black;
+    color: #f3f3f5;
+    border-radius: 14px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .contact-us:hover {
+    background-color: #101011;
+    opacity: 0.5;
+  }
+  .contact {
+    outline: none;
+    border: none !important;
+  }
+  .burger-img {
+    display: none;
+  }
+}
