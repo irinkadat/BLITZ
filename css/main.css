@@ -210,6 +210,10 @@ p {
   display: inline-block;
   margin: 15%;
 }
+.login-form {
+  max-width: 1400px;
+  display: flex;
+}
 
 .mail-btn {
   cursor: pointer;
