@@ -6,11 +6,15 @@ body {
   /* font-size: 2vw;
   line-height: 1.5; */
 }
-
 .nav-bar {
-  margin-top: 20px;
+  border: 1px;
+  padding: 0.2rem 0.2rem;
+  margin-left: auto;
+  width: 100%;
 }
-
+.ll {
+  flex: 0.6;
+}
 ul {
   margin-top: 10px;
   list-style-type: none;
@@ -19,14 +23,23 @@ ul {
   display: flex;
   vertical-align: middle;
   padding: 1rem 1rem;
+  align-items: center;
 }
-
+.min-logo {
+  display: flex;
+  justify-content: unset;
+}
 li a {
   display: block;
-  width: fit-content;
   text-align: center;
   text-decoration: none;
+  justify-content: center;
+  display: flex;
   color: #ffffff;
+  padding: 14px 0px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 li a:hover {
@@ -45,6 +58,7 @@ li {
 }
 .about {
   display: none;
+  margin-left: 50px;
 }
 .services {
   display: none;
@@ -55,12 +69,22 @@ li {
 .how-to {
   display: none;
 }
-
+.burger-img {
+  position: absolute;
+  right: 20px;
+}
 .contact-us-btn {
   display: none;
 }
 .join-btn {
   display: none;
+}
+.slogan {
+  position: absolute;
+  left: 96px;
+}
+.min-logo {
+  margin-left: 10ox;
 }
 
 .sec_1 {
@@ -540,6 +564,44 @@ h4 {
 .person_1:focus-visible {
   outline: -webkit-focus-ring-color auto 1px;
 }
+.contact_ {
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 40px;
+  min-width: 110px;
+  height: 48px;
+  cursor: pointer;
+  color: #ffffff;
+  box-shadow: 0 0 10px #eee;
+  transition: 0.5s;
+  background-size: 200% auto; /*es aris ro feri sheicvalos kursorus mitanisas*/
+  text-transform: uppercase;
+}
+
+.join_ {
+  border: none;
+  background-image: linear-gradient(
+    to left,
+    #e0deea 15%,
+    #cbc4ea 40%,
+    #a197cc 90%,
+    #8176af 100%
+  );
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 40px;
+  min-width: 110px;
+  height: 48px;
+  margin: 24px;
+  cursor: pointer;
+  color: #343045;
+  box-shadow: 0 0 20px #eee;
+  transition: 0.5s;
+  background-size: 200% auto; /*es aris ro feri sheicvalos kursorus mitanisas*/
+  text-transform: uppercase;
+}
 
 .send_btn {
   border: none;
@@ -570,6 +632,15 @@ h4 {
 }
 
 @media screen and (min-width: 279px) and (max-width: 540px) {
+  img.slogann {
+    width: 46px;
+    height: 28px;
+  }
+
+  img.mini-logo {
+    width: 69px;
+    height: 59px;
+  }
   .person_1.pers_2 {
     display: none;
   }
@@ -780,6 +851,25 @@ h4 {
   } */
 }
 @media screen and (min-width: 700px) {
+  .burger-img {
+    display: none;
+  }
+  .about {
+    display: inline-block;
+    margin-right: -28px;
+  }
+  .services {
+    display: inline-block;
+  }
+  .technologies {
+    display: inline-block;
+  }
+
+  .join-btn {
+    display: flex;
+    justify-content: center;
+  }
+
   .divv {
     margin-left: 40px;
   }
@@ -792,6 +882,14 @@ h4 {
   }
 }
 @media screen and (min-width: 949px) {
+  .how-to {
+    display: inline-block;
+  }
+  .contact-us-btn {
+    display: flex;
+    justify-content: end;
+  }
+
   .divv {
     margin-left: 90px;
   }
